@@ -50,7 +50,7 @@ function Head() {
         >
           <ul className="flex flex-col sm:flex-row lg:flex-row gap-8 sm:gap-5 text-xl md:text-base font-semibold items-center place-content-center h-96 sm:h-0 md:h-0 text-[#66748A]">
             <Link to="/" onClick={() => setSelectedOption("aboutus")}>
-              <li className={selectedOption === "aboutus" ? " text-black sm:text-white md:text-white" : ""}>
+              <li className={selectedOption === "aboutus" ? " text-black dark:md:text-white" : ""}>
                 About us
               </li>
             </Link>
@@ -59,7 +59,7 @@ function Head() {
               to="/page-under-construction"
               onClick={() => setSelectedOption("product")}
             >
-              <li className={selectedOption === "product" ? " text-black sm:text-white md:text-white" : ""}>
+              <li className={selectedOption === "product" ? " text-black dark:md:text-white" : ""}>
                 Product
               </li>
             </Link>
@@ -69,7 +69,7 @@ function Head() {
               onClick={() => setSelectedOption("resource")}
             >
               <li
-                className={selectedOption === "resource" ? " text-black sm:text-white md:text-white" : ""}
+                className={selectedOption === "resource" ? " text-black dark:md:text-white" : ""}
               >
                 Resource
               </li>
@@ -79,7 +79,7 @@ function Head() {
               to="/page-under-construction"
               onClick={() => setSelectedOption("contact")}
             >
-              <li className={selectedOption === "contact" ? " text-black sm:text-white md:text-white" : ""}>
+              <li className={selectedOption === "contact" ? " text-black dark:md:text-white" : ""}>
                 Contact
               </li>
             </Link>
