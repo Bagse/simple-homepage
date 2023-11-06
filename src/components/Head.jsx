@@ -30,8 +30,12 @@ function Head() {
         <div className="sm:hidden lg:hidden relative z-50">
           <button onClick={toggleMenu}>
             {isOpen ? (
-              <FaTimesCircle size={25} className="" onClick={closeMenu} />
-            ) : (
+              <FaTimesCircle
+                size={25}
+                onClick={closeMenu}
+                />
+              )
+             : (
               <FaBars size={25} className="dark:text-white" />
             )}
           </button>
@@ -39,10 +43,10 @@ function Head() {
 
         <div
           className={`${
-            isOpen ? "fixed inset-0 bg-white z-50 w-[260px]" : "hidden"
+            isOpen ? "fixed inset-0 left-auto bg-white z-50 w-[240px]" : "hidden"
           } sm:flex`}
         >
-          <ul className="flex flex-col sm:flex-row lg:flex-row gap-8 text-base font-semibold items-center place-content-center h-96 sm:h-0 md:h-0 text-[#66748A]">
+          <ul className="flex flex-col sm:flex-row lg:flex-row gap-8 text-xl md:text-base font-semibold items-center place-content-center h-96 sm:h-0 md:h-0 text-[#66748A]">
             <li onClick={closeMenu}>
               <a
                 href="#"
@@ -64,7 +68,16 @@ function Head() {
               <Toggle />
             </div>
           </ul>
+
+          {/* Close button inside the mobile menu */}
+          <div className="absolute top-4 right-2 sm:hidden">
+            <FaTimesCircle
+              size={25}
+              onClick={closeMenu}
+            />
+          </div>
         </div>
+
         <div className="hidden md:block">
           <Toggle />
         </div>
