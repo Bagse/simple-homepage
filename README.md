@@ -1,3 +1,5 @@
+![image](https://github.com/Bagse/simple-homepage/assets/102260190/780a2d28-804c-4fc5-a9cc-016d1ccc0bbb)
+
 ![image](https://github.com/Bagse/simple-homepage/assets/102260190/b554eebe-85d4-45ab-9382-afe8a12040e6)
 
 
